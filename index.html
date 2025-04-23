@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional accounting services for your business. We count what counts for your success.">
+    <title>Fairfield Accounting Services | Professional Business Accounting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#7c3aed',
+                        accent: '#f59e0b',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800 antialiased">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="text-2xl font-bold text-primary">Fairfield</div>
+                    <span class="ml-2 text-xl font-medium text-gray-700">Accounting</span>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#services" class="text-gray-600 hover:text-primary transition-colors duration-300 font-medium">Services</a>
+                    <a href="#benefits" class="text-gray-600 hover:text-primary transition-colors duration-300 font-medium">Benefits</a>
+                    <a href="#faq" class="text-gray-600 hover:text-primary transition-colors duration-300 font-medium">FAQ</a>
+                    <a href="#contact" class="text-gray-600 hover:text-primary transition-colors duration-300 font-medium">Contact</a>
+                </nav>
+                <a href="https://theaccountants.com" class="hidden md:block bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 shadow-md">
+                    Get Started
+                </a>
+                <button class="md:hidden text-gray-600 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-blue-50 to-indigo-50 py-24 md:py-32 overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+                        Fairfield accounting services
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 max-w-lg">
+                        We count what counts for your business
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="https://theaccountants.com" class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg font-medium text-lg transition-all duration-300 transform hover:scale-105 shadow-lg text-center">
+                            Get Your Free Consultation
+                        </a>
+                        <a href="#services" class="border-2 border-primary text-primary hover:bg-primary/10 px-8 py-4 rounded-lg font-medium text-lg transition-all duration-300 transform hover:scale-105 text-center">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 relative">
+                    <div class="bg-white p-8 rounded-2xl shadow-xl transform rotate-1">
+                        <div class="bg-gradient-to-r from-primary to-secondary p-1 rounded-lg mb-6">
+                            <div class="bg-white p-4 rounded-md">
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Your Financial Health Check</h3>
+                                <p class="text-gray-600">Get a comprehensive analysis of your business finances</p>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-check text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Cash Flow Optimized</h4>
+                                    <p class="text-gray-600 text-sm">Maximize your working capital</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-chart-line text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Growth Projections</h4>
+                                    <p class="text-gray-600 text-sm">Plan for sustainable expansion</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-purple-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-shield-alt text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Risk Assessment</h4>
+                                    <p class="text-gray-600 text-sm">Identify and mitigate financial risks</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-accent rounded-full opacity-20"></div>
+                    <div class="absolute -top-8 -left-8 w-24 h-24 bg-primary rounded-full opacity-20"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Comprehensive Services</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Tailored accounting solutions designed to meet your business needs
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2 border border-gray-100">
+                    <div class="p-8">
+                        <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-user-tie text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Dedicated Manager</h3>
+                        <p class="text-gray-600 mb-6">
+                            Your personal accounting expert who understands your business inside out.
+                        </p>
+                        <a href="#" class="text-primary font-medium hover:text-primary/80 transition-colors duration-300 inline-flex items-center">
+                            Learn more <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2 border border-gray-100">
+                    <div class="p-8">
+                        <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-money-check-alt text-purple-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Payroll Processing</h3>
+                        <p class="text-gray-600 mb-6">
+                            Accurate, timely, and compliant payroll services for your entire team.
+                        </p>
+                        <a href="#" class="text-primary font-medium hover:text-primary/80 transition-colors duration-300 inline-flex items-center">
+                            Learn more <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2 border border-gray-100">
+                    <div class="p-8">
+                        <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-chart-bar text-green-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Cash Flow Forecasting</h3>
+                        <p class="text-gray-600 mb-6">
+                            Predictive analytics to help you make informed financial decisions.
+                        </p>
+                        <a href="#" class="text-primary font-medium hover:text-primary/80 transition-colors duration-300 inline-flex items-center">
+                            Learn more <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose Fairfield Accounting</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We go beyond numbers to deliver real value to your business
+                </p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Benefit 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-red-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-balance-scale text-red-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Regulatory Compliance</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Stay ahead of changing regulations with our expert guidance. We ensure your business remains compliant with all financial reporting requirements.
+                    </p>
+                </div>
+                
+                <!-- Benefit 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-gavel text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Legal Protection</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Our meticulous record-keeping and documentation provide an extra layer of legal protection for your business operations.
+                    </p>
+                </div>
+                
+                <!-- Benefit 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-green-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-shield-alt text-green-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Risk Mitigation</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Identify potential financial risks before they become problems with our proactive monitoring and analysis services.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Trusted by Businesses Like Yours</h2>
+                <p class="text-xl opacity-90 max-w-3xl mx-auto">
+                    Don't just take our word for it - hear from our satisfied clients
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Sarah Johnson</h4>
+                            <p class="text-sm opacity-80">CEO, TechStart Inc.</p>
+                        </div>
+                    </div>
+                    <p class="opacity-90 italic">
+                        "Fairfield Accounting transformed our financial operations. Their cash flow forecasting helped us secure a critical round of funding."
+                    </p>
+                    <div class="flex mt-4">
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Michael Chen</h4>
+                            <p class="text-sm opacity-80">Founder, GreenSolutions</p>
+                        </div>
+                    </div>
+                    <p class="opacity-90 italic">
+                        "The dedicated account manager made all the difference. It's like having a CFO without the full-time expense."
+                    </p>
+                    <div class="flex mt-4">
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">David Rodriguez</h4>
+                            <p class="text-sm opacity-80">Director, UrbanEats</p>
+                        </div>
+                    </div>
+                    <p class="opacity-90 italic">
+                        "Their risk assessment identified tax savings we didn't know existed. Paid for their services many times over."
+                    </p>
+                    <div class="flex mt-4">
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                        <i class="fas fa-star text-yellow-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Answers to common questions about our accounting services
+                </p>
+            </div>
+            <div class="max-w-3xl mx-auto">
+                <!-- FAQ Item 1 -->
+                <div class="mb-4 border-b border-gray-200 pb-4">
+                    <button class="faq-toggle flex justify-between items-center w-full text-left font-medium text-gray-900 hover:text-primary transition-colors duration-300">
+                        <span class="text-lg">What makes Fairfield Accounting different from other firms?</span>
+                        <i class="fas fa-plus text-primary"></i>
+                    </button>
+                    <div class="accordion-content mt-2 text-gray-600">
+                        <p>We combine cutting-edge technology with personalized service. Each client gets a dedicated account manager who truly understands their business, plus access to our team of specialists for complex needs. Our proactive approach helps identify opportunities and risks before they become problems.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="mb-4 border-b border-gray-200 pb-4">
+                    <button class="faq-toggle flex justify-between items-center w-full text-left font-medium text-gray-900 hover:text-primary transition-colors duration-300">
+                        <span class="text-lg">How does your pricing structure work?</span>
+                        <i class="fas fa-plus text-primary"></i>
+                    </button>
+                    <div class="accordion-content mt-2 text-gray-600">
+                        <p>We offer transparent, tiered pricing based on your business size and needs. Most clients choose our monthly subscription model which includes all core services, with add-ons available for specialized needs. During your free consultation, we'll provide a customized quote with no obligation.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="mb-4 border-b border-gray-200 pb-4">
+                    <button class="faq-toggle flex justify-between items-center w-full text-left font-medium text-gray-900 hover:text-primary transition-colors duration-300">
+                        <span class="text-lg">What industries do you specialize in?</span>
+                        <i class="fas fa-plus text-primary"></i>
+                    </button>
+                    <div class="accordion-content mt-2 text-gray-600">
+                        <p>While we serve businesses across all sectors, we have particular expertise in technology startups, professional services, retail/e-commerce, and hospitality. Our team includes specialists familiar with the unique accounting requirements of these industries.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="mb-4 border-b border-gray-200 pb-4">
+                    <button class="faq-toggle flex justify-between items-center w-full text-left font-medium text-gray-900 hover:text-primary transition-colors duration-300">
+                        <span class="text-lg">How do you ensure data security?</span>
+                        <i class="fas fa-plus text-primary"></i>
+                    </button>
+                    <div class="accordion-content mt-2 text-gray-600">
+                        <p>We use bank-grade encryption for all data transfers and storage. Our systems undergo regular security audits, and we maintain strict access controls. All team members receive comprehensive security training and background checks. We're happy to sign NDAs and can accommodate most specific security requirements.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="mb-4 border-b border-gray-200 pb-4">
+                    <button class="faq-toggle flex justify-between items-center w-full text-left font-medium text-gray-900 hover:text-primary transition-colors duration-300">
+                        <span class="text-lg">What's your onboarding process like?</span>
+                        <i class="fas fa-plus text-primary"></i>
+                    </button>
+                    <div class="accordion-content mt-2 text-gray-600">
+                        <p>Our onboarding is designed to be thorough yet efficient. After your initial consultation, we'll gather necessary documents and access (via secure methods). Within 2 weeks, we'll have your accounts set up, historical data analyzed, and provide you with your first financial health report. The entire process is guided by your dedicated account manager.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gray-900 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Financial Management?</h2>
+            <p class="text-xl opacity-90 max-w-3xl mx-auto mb-8">
+                Schedule your free consultation today and discover how Fairfield Accounting can help your business thrive.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="https://theaccountants.com" class="bg-white hover:bg-gray-100 text-gray-900 px-8 py-4 rounded-lg font-medium text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    Get Started Now
+                </a>
+                <a href="#contact" class="border-2 border-white hover:bg-white/10 px-8 py-4 rounded-lg font-medium text-lg transition-all duration-300 transform hover:scale-105">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Get in Touch</h2>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Have questions or ready to start? Our team is here to help.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                                <i class="fas fa-envelope text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-1">Email Us</h4>
+                                <a href="mailto:contact@example.com" class="text-primary hover:text-primary/80 transition-colors duration-300">contact@example.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                                <i class="fas fa-phone-alt text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-1">Call Us</h4>
+                                <p class="text-gray-600">(555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                                <i class="fas fa-map-marker-alt text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-1">Visit Us</h4>
+                                <p class="text-gray-600">123 Financial District, Suite 456<br>New York, NY 10001</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md border border-gray-100">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h3>
+                    <form>
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300" placeholder="John Smith">
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300" placeholder="your@email.com">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300" placeholder="How can we help you?"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white px-6 py-4 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 shadow-md">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="text-2xl font-bold text-white">Fairfield</div>
+                        <span class="ml-2 text-xl text-gray-300">Accounting</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Professional accounting services that help your business grow and thrive.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Dedicated Manager</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Payroll Processing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Cash Flow Forecasting</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Tax Preparation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Financial Reporting</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Company</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Our Team</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Press</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Legal</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Cookie Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">GDPR Compliance</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">
+                    © 2023 Fairfield Accounting Services. All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Terms</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                    icon.classList.remove('fa-minus');
+                    icon.classList.add('fa-plus');
+                } else {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    icon.classList.remove('fa-plus');
+                    icon.classList.add('fa-minus');
+                }
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
